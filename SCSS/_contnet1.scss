@@ -1,0 +1,27 @@
+$gray33:#333;
+
+
+.heading-type1{
+    @include text(#333, rem(20), 700, null, -1px);
+}
+
+.text-type1{
+    @include text(#005BAC, rem(16), null, rem(24), null);
+}
+.text-type2{
+    @include text(#777, rem(14), null, rem(22), rem(-0.5));
+}
+.image-type1{
+    img{
+        width: 100%;
+    }
+}
+.btn-type1{
+    @include text(#333, rem(14), 700, rem(20), rem(-0.5));
+    @include background('ico_btn1.svg', right rem(12) center);
+    display: flex;
+    border:rem(1) solid #bdbdbd;
+    height:rem(48);
+    padding-inline: rem(12);
+    
+}
