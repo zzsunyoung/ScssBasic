@@ -1,0 +1,28 @@
+$gray33:#333;
+$skyblue:#94C0E9;
+
+.heading-type5{
+    @include text(#333, rem(24), 700, null, -0.5px);
+    word-break:keep-all;
+    span{
+        @include text(#333, rem(24), 400, null, -0.5px);
+    }
+
+}
+.text-type5-1{
+    @include text(#333, rem(18), 400, null, -0.5px);
+    padding-top: 8px;
+}
+.btn_warp{
+    margin-top:rem(24);
+    .btn-type5{
+        @include text(#94C0E9, rem(14), 700, null, -0.5px);
+        @include btn-box(1px solid, 100px);
+        @include background('icon-download.svg', right rem(12) center) ;         
+        display: block;
+        margin-bottom:rem(8);
+        line-height: 18px;
+        padding:12px 20px;         
+    
+    }
+}

@@ -57,3 +57,8 @@
     line-height: $lineHeight;
     letter-spacing: $letterSpacing;    
 }
+@mixin btn-box ($borderStyle,$borderRadius){
+    border:$borderStyle;
+    border-radius: $borderRadius;
+   
+}

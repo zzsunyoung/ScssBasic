@@ -1,8 +1,24 @@
 $mt:20, 30;
+$mb:8;
+$pd24:24;
 
+//margin-top
 @each $item in $mt{
     .mt#{$item}{
         margin-top:rem($item);
-
     }
+}
+//margin-bottom
+@each $item in $mb{
+    .mb#{$item}{
+        margin-bottom:rem($item);
+    }
+}
+
+//padding
+@each $item in $pd24 {
+    .pd#{$item}{
+        padding:rem($item)
+    }
+    
 }

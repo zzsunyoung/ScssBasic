@@ -163,6 +163,14 @@ input[type=date]:valid::before {
   margin-top: 3rem;
 }
 
+.mb8 {
+  margin-bottom: 0.8rem;
+}
+
+.pd24 {
+  padding: 2.4rem;
+}
+
 .heading-type1 {
   color: #333;
   font-size: 2rem;
@@ -198,6 +206,45 @@ input[type=date]:valid::before {
   border: 0.1rem solid #bdbdbd;
   height: 4.8rem;
   padding-inline: 1.2rem;
+}
+
+.heading-type5 {
+  color: #333;
+  font-size: 2.4rem;
+  font-Weight: 700;
+  letter-spacing: -0.5px;
+  word-break: keep-all;
+}
+.heading-type5 span {
+  color: #333;
+  font-size: 2.4rem;
+  font-Weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.text-type5-1 {
+  color: #333;
+  font-size: 1.8rem;
+  font-Weight: 400;
+  letter-spacing: -0.5px;
+  padding-top: 8px;
+}
+
+.btn_warp {
+  margin-top: 2.4rem;
+}
+.btn_warp .btn-type5 {
+  color: #94C0E9;
+  font-size: 1.4rem;
+  font-Weight: 700;
+  letter-spacing: -0.5px;
+  border: 1px solid;
+  border-radius: 100px;
+  background: url(../images/icon-download.svg) no-repeat right 1.2rem center;
+  display: block;
+  margin-bottom: 0.8rem;
+  line-height: 18px;
+  padding: 12px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
