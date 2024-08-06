@@ -208,6 +208,46 @@ input[type=date]:valid::before {
   padding-inline: 1.2rem;
 }
 
+.box-grid {
+  display: block;
+}
+.box-grid ul {
+  display: block;
+  list-style: none;
+}
+.box-grid ul li {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 20px 0;
+}
+.box-grid ul li .box__text__title {
+  color: #333;
+  font-size: 1.4rem;
+  font-Weight: 400;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+.box-grid ul li .box__text__info {
+  display: flex;
+}
+.box-grid ul li .box__text__info span {
+  color: #999;
+  font-size: 1.4rem;
+  font-Weight: 400;
+  letter-spacing: -0.5px;
+  margin-right: 12px;
+}
+.box-grid ul li .box__text__info a {
+  background: url(../images/icon_maile.svg) no-repeat left 0rem center;
+  display: inline-block;
+  background-size: 18px 14px;
+}
+.box-grid ul li .box__text__info a span {
+  color: transparent;
+}
+.box-grid ul :last-child {
+  border-bottom: 0;
+}
+
 .heading-type5 {
   color: #333;
   font-size: 2.4rem;
@@ -240,7 +280,7 @@ input[type=date]:valid::before {
   letter-spacing: -0.5px;
   border: 1px solid;
   border-radius: 100px;
-  background: url(../images/icon-download.svg) no-repeat right 1.2rem center;
+  background: url(../images/icon_download.svg) no-repeat right 1.2rem center;
   display: block;
   margin-bottom: 0.8rem;
   line-height: 18px;

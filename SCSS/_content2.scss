@@ -1,0 +1,40 @@
+$gray33:#333;
+$grayf1:#f1f1f1;
+$skyblue:#94C0E9;
+
+
+.box-grid{
+    display: block;
+    ul{
+        display: block;
+        list-style: none;
+        li{
+            border-bottom: 1px solid $grayf1;
+            padding:20px 0;
+            
+            .box__text__title{                
+                @include text(#333, rem(14), 400, null, -0.5px);
+                margin-bottom:4px;
+            }
+            .box__text__info{
+                display: flex;
+               span{
+                @include text(#999, rem(14), 400, null, -0.5px);
+                margin-right:12px;                
+                
+               }
+               
+                a{
+                    @include background('icon_maile.svg', left rem(0) center) ;
+                    display: inline-block;
+                    background-size: 18px 14px;
+                    span{
+                        color:transparent;
+                    }
+                }
+            
+            }
+        }
+        :last-child{border-bottom: 0}
+    }
+}

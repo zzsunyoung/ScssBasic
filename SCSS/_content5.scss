@@ -18,7 +18,7 @@ $skyblue:#94C0E9;
     .btn-type5{
         @include text(#94C0E9, rem(14), 700, null, -0.5px);
         @include btn-box(1px solid, 100px);
-        @include background('icon-download.svg', right rem(12) center) ;         
+        @include background('icon_download.svg', right rem(12) center) ;         
         display: block;
         margin-bottom:rem(8);
         line-height: 18px;

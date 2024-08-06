@@ -46,7 +46,7 @@
     clip: rect(1px, 1px, 1px, 1px);
   }
 
-  @mixin background($fileName, $coordinate){
+@mixin background($fileName, $coordinate){
     background: url(#{$imgUrl}#{$fileName}) no-repeat $coordinate;
 }
 
