@@ -68,3 +68,12 @@
     text-overflow: $ellipis;
    
 }
+
+@mixin flex($display:flex, $direction:row, $j-conent:null, $wrap){
+
+    display:$display;
+    flex-direction:$direction;
+    justify-content: $j-conent;
+    flex-wrap: $wrap;
+    
+}

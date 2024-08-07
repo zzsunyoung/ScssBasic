@@ -1,0 +1,34 @@
+$gray333:#333;
+$gary66:#666;
+$white:#fff;
+.list{
+   @include flex(flex, row, null, wrap);
+    gap:1rem;
+    
+    .list-item{        
+        background-color: $white;
+        padding: 30px 0;
+        text-align: center;
+        border:1px solid blue;
+        width:32rem;
+        flex-basis: 32rem;
+        
+        .tit{
+            @include text(#333, rem(28), 700, null, -1.4px);
+        
+        }
+        .desc{
+            @include text(#666, rem(20), 400, null, -1px);
+            margin-top:2rem;
+        }
+        .more{
+           // @include background('bt_more.svg', center rem(0) center) ;
+            @include background('bt_more.svg', center null center) ;  
+            width: 4.4rem;
+            height: 4.4rem;
+            display: inline-block;
+            position: static;
+            margin:0 auto;         
+        }
+    }
+}

@@ -141,3 +141,7 @@ input[type="date"]::before {
 input[type="date"]:valid::before {
   display: none;
 }
+.hide{
+  overflow: hidden;
+  visibility:hidden
+}
