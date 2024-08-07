@@ -1,0 +1,46 @@
+$gray33:#333;
+$grayf1:#f1f1f1;
+$gray99:#999;
+.box-board{
+    display: block;
+    ul{
+        display: block;
+        list-style: none;
+        li{
+           
+            padding:20px 0;
+            border-bottom:1px solid $grayf1;
+            
+            .box__text__title{                
+                @include text(#333, rem(14), 700, null, -0.5px);
+                @include text-ellipis(hidden, nowrap, ellipsis);
+                margin-bottom:4px;
+                
+            }
+            .box__text__info{
+                display: flex;
+               span{
+                @include text(#999, rem(14), 400, null, -0.5px);
+                margin-right:12px;
+                line-height: 22px;                
+                
+               }
+               .noti{
+                @include background('img_noti.svg', left rem(1) center) ;                          
+                padding-left: 32px;
+               }
+               .view{
+                @include background('img_view.svg', left rem(1) center) ;                          
+                padding-left: 20px ;
+               }              
+               
+            
+            }
+            
+        }
+       
+        
+        
+        
+    }
+}

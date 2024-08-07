@@ -13,7 +13,7 @@ $skyblue:#94C0E9;
             padding:20px 0;
             
             .box__text__title{                
-                @include text(#333, rem(14), 400, null, -0.5px);
+                @include text(#333, rem(14), 700, null, -0.5px);
                 margin-bottom:4px;
             }
             .box__text__info{
@@ -25,16 +25,18 @@ $skyblue:#94C0E9;
                }
                
                 a{
-                    @include background('icon_maile.svg', left rem(0) center) ;
+                    @include background('icon_mail.svg', left rem(0) center) ;
                     display: inline-block;
-                    background-size: 18px 14px;
+                    background-size: 1.8rem  1.4rem;
                     span{
                         color:transparent;
+                        overflow: hiddent;
                     }
                 }
             
             }
         }
         :last-child{border-bottom: 0}
+        
     }
 }

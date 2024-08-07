@@ -1,0 +1,58 @@
+$gray33:#333;
+$grayf1:#f1f1f1;
+$gray77:#777;
+$black:#000;
+$blue:#005BAC;
+.table-content{
+    display: block;
+    background-color: rgba(0,0,0, .2);
+    .dim{
+        
+        position: relative;
+        background: rgba(0, 0, 0, 0.20);
+        
+        span{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            background: rgba(0, 0, 0, 0.40);
+            
+        }
+        
+    }
+}
+
+.table-style{
+    width: 100%;
+    border-collapse: collapse;
+    @include text(#777, rem(14), 400, null, -0.5px);
+    th, td{
+        padding: 16px 14px;
+
+    }
+    thead tr{
+        text-align: center;        
+        border-top: 2px solid $blue;
+        border-bottom:1px solid $blue;
+        @include text(#222, 700, rem(14), 2.2rem, -0.5 );
+    }
+    tbody tr{
+        border-bottom:1px solid $grayf1
+   
+    }
+    p{
+        @include text(#777, rem(14), 400, null, -0.5px)
+    }
+    .text-box{
+        
+        p{
+            padding:0 0 0 20px;
+            position: relative;
+           
+
+        }
+    }
+    
+    
+}

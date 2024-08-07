@@ -222,7 +222,7 @@ input[type=date]:valid::before {
 .box-grid ul li .box__text__title {
   color: #333;
   font-size: 1.4rem;
-  font-Weight: 400;
+  font-Weight: 700;
   letter-spacing: -0.5px;
   margin-bottom: 4px;
 }
@@ -237,15 +237,108 @@ input[type=date]:valid::before {
   margin-right: 12px;
 }
 .box-grid ul li .box__text__info a {
-  background: url(../images/icon_maile.svg) no-repeat left 0rem center;
+  background: url(../images/icon_mail.svg) no-repeat left 0rem center;
   display: inline-block;
-  background-size: 18px 14px;
+  background-size: 1.8rem 1.4rem;
 }
 .box-grid ul li .box__text__info a span {
   color: transparent;
+  overflow: hiddent;
 }
 .box-grid ul :last-child {
   border-bottom: 0;
+}
+
+.box-board {
+  display: block;
+}
+.box-board ul {
+  display: block;
+  list-style: none;
+}
+.box-board ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+.box-board ul li .box__text__title {
+  color: #333;
+  font-size: 1.4rem;
+  font-Weight: 700;
+  letter-spacing: -0.5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+}
+.box-board ul li .box__text__info {
+  display: flex;
+}
+.box-board ul li .box__text__info span {
+  color: #999;
+  font-size: 1.4rem;
+  font-Weight: 400;
+  letter-spacing: -0.5px;
+  margin-right: 12px;
+  line-height: 22px;
+}
+.box-board ul li .box__text__info .noti {
+  background: url(../images/img_noti.svg) no-repeat left 0.1rem center;
+  padding-left: 32px;
+}
+.box-board ul li .box__text__info .view {
+  background: url(../images/img_view.svg) no-repeat left 0.1rem center;
+  padding-left: 20px;
+}
+
+.table-content {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.table-content .dim {
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+}
+.table-content .dim span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.table-style {
+  width: 100%;
+  border-collapse: collapse;
+  color: #777;
+  font-size: 1.4rem;
+  font-Weight: 400;
+  letter-spacing: -0.5px;
+}
+.table-style th, .table-style td {
+  padding: 16px 14px;
+}
+.table-style thead tr {
+  text-align: center;
+  border-top: 2px solid #005BAC;
+  border-bottom: 1px solid #005BAC;
+  color: #222;
+  font-size: 700;
+  font-Weight: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.5;
+}
+.table-style tbody tr {
+  border-bottom: 1px solid #f1f1f1;
+}
+.table-style p {
+  color: #777;
+  font-size: 1.4rem;
+  font-Weight: 400;
+  letter-spacing: -0.5px;
+}
+.table-style .text-box p {
+  padding: 0 0 0 20px;
+  position: relative;
 }
 
 .heading-type5 {
