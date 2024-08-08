@@ -101,6 +101,9 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: textfield;
   appearance: none;
+  border:1px solid #e1e1e1 ;
+  padding:30px;
+  width: 100%;
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {

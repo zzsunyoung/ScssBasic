@@ -2,16 +2,14 @@ $gray333:#333;
 $gary66:#666;
 $white:#fff;
 .list{
-   @include flex(flex, row, null, wrap);
-    gap:1rem;
-    
+   @include flex(flex, row, null, wrap);       
     .list-item{        
         background-color: $white;
         padding: 30px 0;
         text-align: center;
-        border:1px solid blue;
-        width:32rem;
-        flex-basis: 32rem;
+        
+        width:calc(100% / 2 - 20px);
+        margin-right:20px;
         
         .tit{
             @include text(#333, rem(28), 700, null, -1.4px);
@@ -30,5 +28,8 @@ $white:#fff;
             position: static;
             margin:0 auto;         
         }
+    }
+    :nth-child(even){
+        margin-right:0;
     }
 }
