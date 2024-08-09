@@ -158,11 +158,6 @@ input[type=date]:valid::before {
   display: none;
 }
 
-.hide {
-  overflow: hidden;
-  visibility: hidden;
-}
-
 .mt20 {
   margin-top: 2rem;
 }
@@ -226,34 +221,37 @@ input[type=date]:valid::before {
   border-bottom: 1px solid #f1f1f1;
   padding: 20px 0;
 }
-.box-grid ul li .box__text__title {
+.box-grid ul li:last-child {
+  border-bottom: 0;
+}
+
+.box-grid__title {
   color: #333;
   font-size: 1.4rem;
   font-Weight: 700;
   letter-spacing: -0.5px;
   margin-bottom: 4px;
 }
-.box-grid ul li .box__text__info {
+
+.box-grid__info {
   display: flex;
 }
-.box-grid ul li .box__text__info span {
+.box-grid__info span {
   color: #999;
   font-size: 1.4rem;
   font-Weight: 400;
   letter-spacing: -0.5px;
   margin-right: 12px;
 }
-.box-grid ul li .box__text__info a {
+
+.ico_mail {
   background: url(../images/icon_mail.svg) no-repeat left 0rem center;
   display: inline-block;
-  background-size: 1.8rem 1.4rem;
+  background-size: 2rem 1.6rem;
 }
-.box-grid ul li .box__text__info a span {
+.ico_mail span {
   color: transparent;
-  overflow: hiddent;
-}
-.box-grid ul :last-child {
-  border-bottom: 0;
+  overflow: hidden;
 }
 
 .box-board {
@@ -267,34 +265,36 @@ input[type=date]:valid::before {
   padding: 20px 0;
   border-bottom: 1px solid #f1f1f1;
 }
-.box-board ul li .box__text__title {
+
+.box-board__title {
   color: #333;
   font-size: 1.4rem;
   font-Weight: 700;
   letter-spacing: -0.5px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   margin-bottom: 4px;
 }
-.box-board ul li .box__text__info {
+
+.box-board__info {
   display: flex;
 }
-.box-board ul li .box__text__info span {
+.box-board__info span {
   color: #999;
   font-size: 1.4rem;
   font-Weight: 400;
   letter-spacing: -0.5px;
   margin-right: 12px;
-  line-height: 22px;
 }
-.box-board ul li .box__text__info .noti {
+
+.ico_noti {
   background: url(../images/img_noti.svg) no-repeat left 0.1rem center;
   padding-left: 32px;
+  background-size: 2rem;
 }
-.box-board ul li .box__text__info .view {
+
+.ico_view {
   background: url(../images/img_view.svg) no-repeat left 0.1rem center;
   padding-left: 20px;
+  background-size: 1.4rem 1rem;
 }
 
 .table-content {

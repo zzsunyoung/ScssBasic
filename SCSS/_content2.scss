@@ -5,38 +5,39 @@ $skyblue:#94C0E9;
 
 .box-grid{
     display: block;
+    
     ul{
         display: block;
         list-style: none;
         li{
             border-bottom: 1px solid $grayf1;
-            padding:20px 0;
-            
-            .box__text__title{                
-                @include text(#333, rem(14), 700, null, -0.5px);
-                margin-bottom:4px;
-            }
-            .box__text__info{
-                display: flex;
-               span{
-                @include text(#999, rem(14), 400, null, -0.5px);
-                margin-right:12px;                
-                
-               }
-               
-                a{
-                    @include background('icon_mail.svg', left rem(0) center) ;
-                    display: inline-block;
-                    background-size: 1.8rem  1.4rem;
-                    span{
-                        color:transparent;
-                        overflow: hiddent;
-                    }
-                }
-            
-            }
-        }
-        :last-child{border-bottom: 0}
+            padding:20px 0;            
+            &:last-child{border-bottom: 0}
         
+        }
+    }
+}
+
+.box-grid__title{                
+    @include text(#333, rem(14), 700, null, -0.5px);
+    margin-bottom:4px;
+}
+.box-grid__info{
+    display: flex;
+   span{
+    @include text(#999, rem(14), 400, null, -0.5px);
+    margin-right:12px;                
+    
+} 
+   
+}
+.ico_mail{
+    @include background('icon_mail.svg', left rem(0) center) ;
+    display: inline-block;
+    background-size: 2rem 1.6rem;
+
+    span{
+        color:transparent;
+        overflow: hidden;
     }
 }
